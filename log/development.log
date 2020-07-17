@@ -80,3 +80,14 @@ app/controllers/posts_controller.rb:15:in `create'
   Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
   Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.4ms)
+Started POST "/posts" for 67.175.194.102 at 2020-07-17 22:30:52 +0000
+Cannot render console from 67.175.194.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L4095NWhFInNca1n6tL/VWBmic+qLam1HxxLnCGdwsb7tBQ228+/bPytxem3i4Qm1++91pcaTZOPdzp9w1xAfw==", "post"=>{"title"=>"cat", "description"=>"cats are good"}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/posts_controller.rb:15:in `create'
